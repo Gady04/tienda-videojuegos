@@ -1,0 +1,157 @@
+/* PALETA OFICIAL ESTILO XBOX */
+:root {
+    --xbox-black: #0e0e0e;            /* Fondo negro */
+    --xbox-card: #1d1d1d;             /* Fondo gris carbón para cards */
+    --xbox-card-hover: #2a2a2a;       /* Efecto hover */
+    --xbox-green: #107c41;            /* Verde Xbox oficial */
+    --xbox-green-neon: #107c41;       /* Verde acento */
+    --xbox-text-light: #ffffff;       /* Texto blanco */
+    --xbox-text-muted: #aaaaaa;       /* Texto secundario */
+}
+
+/* Forzar reglas globales */
+body {
+    background-color: var(--xbox-black) !important;
+    color: var(--xbox-text-light) !important;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    opacity: 1 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section, nav, footer {
+    opacity: 1 !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Navbar */
+.navbar-xbox {
+    background-color: #050505 !important;
+    border-bottom: 3px solid var(--xbox-green);
+}
+
+.brand-xbox {
+    color: #20e070 !important;
+}
+
+/* Banner Principal (Hero) */
+.hero-section {
+    background-image: url("../banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 450px;
+    width: 100%;
+}
+/* Tarjetas (Cards) */
+.card-xbox {
+    background-color: var(--xbox-card) !important;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.card-xbox:hover {
+    transform: translateY(-6px);
+    background-color: var(--xbox-card-hover) !important;
+    border-color: #20e070;
+    box-shadow: 0 8px 20px rgba(16, 124, 65, 0.4);
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Botones Verde Xbox */
+.btn-xbox-green {
+    background-color: var(--xbox-green);
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-xbox-green:hover {
+    background-color: #129a51;
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(16, 124, 65, 0.6);
+}
+
+/* Botones Filtro */
+.btn-filtro {
+    border: 1px solid #444444;
+    color: var(--xbox-text-light);
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+.btn-filtro:hover, .btn-filtro.active {
+    background-color: var(--xbox-green);
+    color: #ffffff;
+    border-color: var(--xbox-green);
+}
+
+/* Precios e Inputs */
+.precio-xbox {
+    color: #20e070;
+}
+
+.bg-xbox-secondary {
+    background-color: var(--xbox-card) !important;
+}
+
+.input-xbox {
+    background-color: #121212;
+    border: 1px solid #333333;
+    color: #ffffff;
+}
+
+.input-xbox:focus {
+    background-color: #121212;
+    border-color: #20e070;
+    color: #ffffff;
+    box-shadow: 0 0 8px rgba(16, 124, 65, 0.4);
+}
+
+/* Carrusel y Modales */
+.carousel-item img {
+    max-height: 480px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(14, 14, 14, 0.85);
+    border: 1px solid var(--xbox-green);
+}
+
+.modal-content {
+    background-color: var(--xbox-card);
+    border: 1px solid var(--xbox-green);
+}
+
+.modal-header {
+    background-color: var(--xbox-green);
+}
+
+.border-xbox {
+    border-color: var(--xbox-green) !important;
+}
+
+/* Ajustes para inputs y componentes de contacto */
+.input-group-text {
+    border-color: #333333;
+}
+
+.tracking-wider {
+    letter-spacing: 0.5px;
+}
+
+.card-xbox {
+    background-color: var(--xbox-card) !important;
+}
